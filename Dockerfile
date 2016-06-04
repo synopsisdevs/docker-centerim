@@ -1,5 +1,7 @@
 FROM debian:wheezy
 
+MAINTAINER developers@synopsis.cz
+
 RUN apt-get update && apt-get install -y centerim-utf8 && apt-get clean
 
 RUN apt-get update && apt-get install -y imagemagick && apt-get clean
